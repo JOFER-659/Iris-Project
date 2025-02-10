@@ -8,7 +8,7 @@
 library(datasets)
 library(tidyverse)
 
-#First lets load and scale our data 
+#First lets load and scale our data (IrisData2 includes true species)
 IrisData <- as.data.frame(scale(iris[1:4]))
 IrisData2 <- bind_cols(IrisData, Species = iris[,5])
 
